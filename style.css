@@ -1,0 +1,88 @@
+header{ 
+    background-color: #FFD900;
+    padding: 10px;
+    width: 100%;
+}
+
+#background{
+    background-color: #514988;
+    align-items: center;
+    text-align: center;
+    width: 50%;
+}
+
+#titulo{
+    color: #F3C61F;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 60px;
+    display: grid;
+    margin-top: 0px;
+    padding: 20px;
+}
+
+h3{
+    color: #FFFFFF;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 25px;
+    text-align: center;
+    width: 50%;
+    height: 150px;
+    display: grid;
+    justify-content: center;
+    margin: auto;
+    margin-top: -1em;
+}
+
+p{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    display: grid;
+    text-align: center;
+    color: #FFFFFF;
+    margin-top: -5em;
+    margin-left: 2em;
+    margin-right: 2em;   
+}
+
+#time{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #514988;
+    display: flex;
+    margin-left: 150px;
+    width: 50%;
+}
+
+#aviso{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: Bold;
+    font-size: 27px;
+    line-height: 100%;
+    align-items: Center;
+    color: #F3C61F;
+    display: grid;
+    background-color: #fff;
+    font-size: 20px;
+    padding: 20px 0 20px 50px;
+}
+
+.botao{
+    font-size: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+    background-color: #514988;
+    color: #fff;
+    border: none;
+    border-radius: 12px;
+    padding: 30px 60px;
+    margin: 15px 0;
+    cursor: pointer;
+}
+
+.btn-information:hover{
+    color: #F3C61F;
+}
