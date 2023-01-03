@@ -5,44 +5,55 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> CCXP 22 </title>
-    git status
+    <link rel="stylesheet" href="style.css">
     
 </head>
 <body>
-    <header>
-        <div>
+    <div class="card">
+        <header>
             <img src="ccxp22.svg" width="100px">
-        </div>
-    </header>
+        </header>
     
-    <div id="background">
-        <h1 id="titulo"> REVIVA O ÉPICO </h1>
-        <h3> DE 01 A 04 DE DEZEMBRO </h3>
-        <p> Você consegue sentir? É aquela sensação de finalmente poder falar em voz alta: "estamos em casa". Sim, em dezembro de 2022, teremos a volta da CCXP física. Mas não será qualquer CCXP, vai ser a maior de todos os tempos. Prepare-se para visitar seus universos favoritos, explorar o Artists' Valley, se emocionar nos auditórios e encontrar aventuras épicas a cada passo pelos nossos corredores. </p>
-    </div>
-    
-    <section class="countdown">
-        <div id="time">
-            <h2><span id="dia"></span>D</h2>
-            <h2><span id="hora"></span>H</h2>
-            <h2><span id="minuto"></span>M</h2>
-            <h2><span id="segundo"></span>S</h2>
+        <section class="section-information"> 
+
+            <div class="section-information-text">
+                <h1 class="text-title"> REVIVA O ÉPICO </h1>
+                <h3 class="text-subtitle"> DE 01 A 04 DE DEZEMBRO </h3>
+                <p class="text-information"> Você consegue sentir? É aquela sensação de finalmente poder falar em voz alta: "estamos em casa". Sim, em dezembro de 2022, teremos a volta da CCXP física. Mas não será qualquer CCXP, vai ser a maior de todos os tempos. Prepare-se para visitar seus universos favoritos, explorar o Artists' Valley, se emocionar nos auditórios e encontrar aventuras épicas a cada passo pelos nossos corredores. </p>
+            </div>     
+            <div class="section-countdown">
+                <div class="countdown">
+                    <div class="time">
+                        <h2><span id="dia"></span>D</h2>
+                        <h2><span id="hora"></span>H</h2>
+                        <h2><span id="minuto"></span>M</h2>
+                        <h2><span id="segundo"></span>S</h2>
+                    </div>
+
+                    <h2 class="countdown-subtitle"> PARA A MAIOR CCXP DE TODOS OS TEMPOS </h2>
+                    <video autoplay muted controls loop><source src="Arlequina.mp4" type="video/mp4"></video>
+                </div>
+                
+            </div>
+        </section>
+
+        <h3 id="aviso"> AINDA DÁ TEMPO DE GARANTIR O SEU, MAS CORRE! </h3>
+        <div class="section-confirmation">
+            <div class="cards">
+                <img src="qui.svg">
+                <img src="sex.svg">
+                <img src="esgotado.svg">
+                <img src="dom.svg">
+                
+            </div>
+            <div class="botao">
+                <button onclick="showSelectedCards()" class="btn-information"> Garanta o seu!</button>
+            </div>
+
         </div>
-    <section>
-        <h2> PARA A MAIOR CCXP DE TODOS OS TEMPOS </h2>
-        <video width = "700px" autoplay muted controls loop><source src="Arlequina.mp4" type="video/mp4"></video>
-    </section>
-    <h3 id="aviso"> AINDA DÁ TEMPO DE GARANTIR O SEU, MAS CORRE! </h3>
-    <div class="cards">
-        <img src="qui.svg">
-        <img src="sex.svg">
-        <img src="esgotado.svg">
-        <img src="dom.svg">
         
     </div>
-    <div class="botao">
-        <button onclick="showSelectedCards()" class="btn-information">Garanta o seu!</button>
-    </div>
+    
     <script src="script.js"> </script>
 </body>
 </html>

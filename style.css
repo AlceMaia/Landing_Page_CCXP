@@ -1,86 +1,124 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #000;
+}
+
+.card{
+    width: 60vw;
+    height: 85vh;
+    margin: auto;
+    background-color: #FFFFFF;
+    margin-top: 50px;
+}
+
 header{ 
     background-color: #FFD900;
-    padding: 10px;
+    padding: 10px 0;
     width: 100%;
 }
 
-#background{
+header img{
+    margin-left: 10px;
+}
+
+.section-information{
+    display: flex;
+    gap: 30px;
+    font-size: 10px;
+}
+
+.section-information-text{
     background-color: #514988;
-    align-items: center;
-    text-align: center;
     width: 50%;
+    padding: 30px;
+    text-align: center;
+    flex: 1;
+   
 }
 
-#titulo{
+.section-countdown{
+    width: 48%;
+}
+.text-title{
     color: #F3C61F;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    text-align: center;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 60px;
-    display: grid;
-    margin-top: 0px;
-    padding: 20px;
+    font-weight: bold;
+    font-size: 40px;
+    margin-bottom: 20px;
 }
 
-h3{
+.text-subtitle{
     color: #FFFFFF;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 25px;
-    text-align: center;
-    width: 50%;
-    height: 150px;
-    display: grid;
-    justify-content: center;
-    margin: auto;
-    margin-top: -1em;
+    margin-bottom: 30px;
+    font-size: 15px;
 }
 
 p{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-style: normal;
     font-weight: 400;
-    font-size: 20px;
-    display: grid;
-    text-align: center;
-    color: #FFFFFF;
-    margin-top: -5em;
-    margin-left: 2em;
-    margin-right: 2em;   
+    font-size: 14px;
+
+    color: #FFFFFF; 
 }
 
-#time{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+.countdown{
+    display: flex;
+    flex-direction: column;
+}
+
+.time{
+    font-size: 25px;
     color: #514988;
     display: flex;
-    margin-left: 150px;
-    width: 50%;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.countdown-subtitle{
+    color: #E33881;
+    margin-bottom: 20px;
+    
+}
+
+.countdown video{
+    width: 97%;
 }
 
 #aviso{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-style: Bold;
-    font-size: 27px;
-    line-height: 100%;
-    align-items: Center;
+    font-size: 14px;
     color: #F3C61F;
-    display: grid;
-    background-color: #fff;
-    font-size: 20px;
     padding: 20px 0 20px 50px;
 }
 
-.botao{
-    font-size: 30px;
+.section-confirmation{
+    display: flex;
+    align-items: center;
+    
+}
+.cards img{
+    width: 100px;
+    
+}
+
+.cards{
+    margin-left: 50px;
+}
+
+.btn-information{
+    font-size: 20px;
     font-weight: bold;
     text-transform: uppercase;
     background-color: #514988;
     color: #fff;
     border: none;
     border-radius: 12px;
-    padding: 30px 60px;
-    margin: 15px 0;
+    padding: 25px 60px;
+    margin-left: 40px;
     cursor: pointer;
+    
 }
 
 .btn-information:hover{
