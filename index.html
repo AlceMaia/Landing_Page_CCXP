@@ -31,7 +31,7 @@
                     </div>
 
                     <h2 class="countdown-subtitle"> PARA A MAIOR CCXP DE TODOS OS TEMPOS </h2>
-                    <video autoplay muted controls loop><source src="Arlequina.mp4" type="video/mp4"></video>
+                    <video autoplay muted loop><source src="Arlequina.mp4" type="video/mp4"></video>
                 </div>
                 
             </div>
@@ -40,10 +40,10 @@
         <h3 id="aviso"> AINDA DÁ TEMPO DE GARANTIR O SEU, MAS CORRE! </h3>
         <div class="section-confirmation">
             <div class="cards">
-                <img src="qui.svg">
-                <img src="sex.svg">
-                <img src="esgotado.svg">
-                <img src="dom.svg">
+                <img src="qui.svg" onmouseover="highlightCard('quinta')" onmouseout="hightCard('quinta')" id="quinta" alt="">
+                <img src="sex.svg" onmouseover="highlightCard('sexta')" onmouseout="hightCard('sexta')"id="sexta" alt="">
+                <img src="esgotado.svg" onmouseover="highlightCard('sabado')" onmouseout="hightCard('sabado')" id="sabado" alt="">
+                <img src="dom.svg" onmouseover="highlightCard('domingo')" onmouseout="hightCard('domingo')" id="domingo" alt="">
                 
             </div>
             <div class="botao">
@@ -55,5 +55,6 @@
     </div>
     
     <script src="script.js"> </script>
+    <script src="main.js"> </script>
 </body>
 </html>

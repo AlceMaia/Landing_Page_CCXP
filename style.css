@@ -38,7 +38,6 @@ header img{
     padding: 30px;
     text-align: center;
     flex: 1;
-   
 }
 
 .section-countdown{
@@ -123,4 +122,8 @@ p{
 
 .btn-information:hover{
     color: #F3C61F;
+}
+
+.card-highlight{
+    box-shadow: 5px 10px grey;
 }

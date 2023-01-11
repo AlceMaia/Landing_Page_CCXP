@@ -1,7 +1,3 @@
-
-
-
-
 const dia = document.getElementById('dia')
 const hora = document.getElementById('hora')
 const minuto = document.getElementById('minuto')
@@ -32,6 +28,19 @@ function formatoTempo(tempo){
 
 }
 
-
 countDown();
 setInterval(countDown, 1000)
+
+function addRedBorder(id)
+{
+    element = document.querySelector("#" + id);
+    element.style.border = "5px solid red";
+}
+
+//addRedBorder("quinta");
+
+function highlightCard(selector)
+{
+    var element = document.querySelector(selector);
+    element.classList.toggle("card-highligh");
+}
