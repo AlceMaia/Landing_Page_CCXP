@@ -58,7 +58,7 @@ function checkKeyboardCode()
 
 function addKeyboardEventListeners()
 {
-    document.addKeyboardEventListener('keydown', (event) => {
+    document.addEventListener('keydown', (event) => {
 
         var ingresso1 = document.getElementById("quinta");
         var ingresso2 = document.getElementById("sexta");
@@ -70,7 +70,7 @@ function addKeyboardEventListeners()
             ingresso1.classList.toggle("card-highlight");
             ingresso2.classList.remove("card-highlight");
             ingresso3.classList.remove("card-highlight");
-            ingresso4.classList.removo("card-highlight");
+            ingresso4.classList.remove("card-highlight");
         }
         if(code == 'Numpad2') {
             ingresso1.classList.remove("card-highlight");
