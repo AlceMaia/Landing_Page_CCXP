@@ -1,43 +1,11 @@
-const dia = document.getElementById('dia')
-const hora = document.getElementById('hora')
-const minuto = document.getElementById('minuto')
-const segundo = document.getElementById('segundo')
 
-const lancamento = "31 dec 2023"
-
-function countDown(){
-    const dataLanc = new Date(lancamento)
-    const hoje = new Date()
-
-    const segTotal = (dataLanc - hoje)/1000;
-
-    const finalDias =  Math.floor(segTotal /60 /60/ 24);
-    const finalHoras = Math.floor(segTotal /60 /60) % 24;
-    const finalMinutos = Math.floor(segTotal /60) % 60;
-    const finalSegundos = Math.floor(segTotal) % 60;
-
-    dia.innerHTML = finalDias
-    hora.innerHTML = formatoTempo(finalHoras)
-    minuto.innerHTML = formatoTempo(finalMinutos)
-    segundo.innerHTML = formatoTempo(finalSegundos)
-
-}
-
-function formatoTempo(tempo){
-    return tempo < 10? `0${tempo}` : tempo;
-
-}
-
-countDown();
-setInterval(countDown, 1000)
+const ingressos = [];
 
 function addRedBorder(id)
 {
-    element = document.querySelector("#" + id);
+    element = document.querySelector( `#${id})`);
     element.style.border = "5px solid red";
 }
-
-//addRedBorder("quinta");
 
 function highlightCard(selector)
 {
@@ -56,8 +24,8 @@ function checkKeyboardCode()
         
 }
 
-function addKeyboardEventListeners()
-{
+function addKeyboardEventListeners(){
+
     document.addEventListener('keydown', (event) => {
 
         var ingresso1 = document.getElementById("quinta");
@@ -93,4 +61,18 @@ function addKeyboardEventListeners()
     }, false);
 }
 //checkKeyboardCode();
+addKeyboardEventListeners();
+
+selectCard = (selector) => {
+    var element = document.querySelector(selector);
+    element.classList.toggle("card-selected");
+    if(ingressos.includes(selector)) ingressos.pop(selector);
+    else ingressos.push(selector)
+}
+
+showSelectedCards = () =>
+{
+    if(ingressos.length > 0) alert("Ingressos Selecionados:" + ingressos);
+}
+
 addKeyboardEventListeners();

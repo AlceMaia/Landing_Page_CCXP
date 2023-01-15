@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> CCXP 22 </title>
     <link rel="stylesheet" href="style.css">
+    <title> CCXP 22 </title>
+    
     
 </head>
 <body>
@@ -31,7 +32,8 @@
                     </div>
 
                     <h2 class="countdown-subtitle"> PARA A MAIOR CCXP DE TODOS OS TEMPOS </h2>
-                    <video autoplay muted loop><source src="Arlequina.mp4" type="video/mp4"></video>
+                    
+                    <video width="98%" autoplay muted loop><source src="Arlequina.mp4" type="video/mp4"></video>
                 </div>
                 
             </div>
@@ -40,10 +42,10 @@
         <h3 id="aviso"> AINDA DÁ TEMPO DE GARANTIR O SEU, MAS CORRE! </h3>
         <div class="section-confirmation">
             <div class="cards">
-                <img src="qui.svg" onmouseover="highlightCard('#quinta')" onmouseout="highlightCard('#quinta')" id="quinta" alt="">
-                <img src="sex.svg" onmouseover="highlightCard('#sexta')" onmouseout="highlightCard('#sexta')"id="sexta" alt="">
-                <img src="esgotado.svg" onmouseover="highlightCard('#sabado')" onmouseout="highlightCard('#sabado')" id="sabado" alt="">
-                <img src="dom.svg" onmouseover="highlightCard('#domingo')" onmouseout="highlightCard('#domingo')" id="domingo" alt="">
+                <img src="qui.svg" onclick="selectCard('#quinta')" onmouseover="highlightCard('#quinta')" onmouseout="highlightCard('#quinta')" id="quinta" alt="">
+                <img src="sex.svg" onclick="selectCard('#sexta')" onmouseover="highlightCard('#sexta')" onmouseout="highlightCard('#sexta')" id="sexta" alt="">
+                <img src="esgotado.svg" onclick="selectCard('#sabado')" onmouseover="highlightCard('#sabado')" onmouseout="highlightCard('#sabado')" id="sabado" alt="">
+                <img src="dom.svg" onclick="selectCard('#domingo')" onmouseover="highlightCard('#domingo')" onmouseout="highlightCard('#domingo')" id="domingo" alt="">
                 
             </div>
             <div class="botao">
@@ -53,6 +55,8 @@
         </div>
         
     </div>
+
+    <script src="cronometro.js"> </script>
     <script src="main.js"> </script>
 </body>
 </html>
